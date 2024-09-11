@@ -9,7 +9,7 @@ function App() {
   const [weather, setWeather] = useState({
     loading: true,
     data: {},
-    error: false
+    error: false,
   });
 
   const toDate = () => {
@@ -25,7 +25,7 @@ function App() {
       "September",
       "October",
       "Nocvember",
-      "December"
+      "December",
     ];
     const days = [
       "Sunday",
@@ -34,7 +34,7 @@ function App() {
       "Wednesday",
       "Thursday",
       "Friday",
-      "Saturday"
+      "Saturday",
     ];
 
     const currentDate = new Date();
@@ -86,7 +86,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>React Js Weather App</h1>
+      <h1>SkieFies : Instant weather at a glance.</h1>
 
       {/* SearchEngine component */}
       <SearchEngine query={query} setQuery={setQuery} search={search} />
